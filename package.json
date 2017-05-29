@@ -4,7 +4,7 @@
   "description": "Learning Express",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "babel-node app.js --presets es2015"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/poyrazovic/express-playground#readme",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
   }
 }

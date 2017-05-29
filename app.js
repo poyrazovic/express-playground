@@ -1,4 +1,6 @@
-const express = require('express');
+import express from 'express'; // babel version
+// es6 version
+// const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
