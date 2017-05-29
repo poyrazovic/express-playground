@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/poyrazovic/express-playground/issues"
   },
-  "homepage": "https://github.com/poyrazovic/express-playground#readme"
+  "homepage": "https://github.com/poyrazovic/express-playground#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
