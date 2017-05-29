@@ -1,0 +1,26 @@
+{
+  "name": "express-playground",
+  "version": "1.0.0",
+  "description": "Learning Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poyrazovic/express-playground.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "js",
+    "learning",
+    "development"
+  ],
+  "author": "Sertac Poyraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poyrazovic/express-playground/issues"
+  },
+  "homepage": "https://github.com/poyrazovic/express-playground#readme"
+}
