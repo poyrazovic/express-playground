@@ -1,12 +1,22 @@
-import express from 'express'; // babel version
-// es6 version
+import express from 'express';
+import pug from 'pug';
+import path from 'path';
 // const express = require('express');
 const app = express();
+
+// region set
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+// endregion
 
 // Get parameter
 app.get('/', function (req, res) {
     if(req.query.name != undefined) console.log(req.query.name);
-    res.send('Hello World!');
+    res.render('index', {title: 'Index'});
+});
+
+app.get('/about', function (req, res) {
+   res.render('about', {title: 'About'});
 });
 
 // 404 page
