@@ -10,20 +10,20 @@ app.set('view engine', 'pug');
 // endregion
 
 // Get parameter
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     if(req.query.name != undefined) console.log(req.query.name);
     res.render('index', {title: 'Index'});
 });
 
-app.get('/about', function (req, res) {
+app.get('/about', (req, res) => {
    res.render('about', {title: 'About'});
 });
 
 // 404 page
-app.use(function (req, res) {
+app.use((req, res) => {
     res.status(404).send('404');
 });
 
-app.listen('9005', function () {
+app.listen('9005', () => {
     console.log('Server Started!');
 });
